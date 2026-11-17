@@ -1,13 +1,11 @@
-import AppText from '@/src/components/AppText';
 import Button from '@/src/components/Button';
 import Card from '@/src/components/Card';
 import { ThemeContext } from '@/src/theme/ThemeProvider';
 import { useContext } from 'react';
-import { Pressable, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Index() {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const { theme, selectTheme } = useContext(ThemeContext);
     return (
         <SafeAreaView
             style={{
@@ -17,7 +15,13 @@ export default function Index() {
                 backgroundColor: theme.colors.core.bg
             }}
         >
-            <Button onPress={toggleTheme}>Toggle theme</Button>
+            <Button onPress={() => selectTheme('light_theme')}>
+                light_theme
+            </Button>
+            <Button onPress={() => selectTheme('dark_theme')}>
+                dark_theme
+            </Button>
+            <Button onPress={() => selectTheme('system')}>system</Button>
             <Card></Card>
         </SafeAreaView>
     );
