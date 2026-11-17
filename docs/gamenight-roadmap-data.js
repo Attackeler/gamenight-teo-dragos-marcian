@@ -57,7 +57,8 @@ const PHASES = [
             {
                 id: 'pd-setup',
                 t: 'Machine setup end-to-end (docs/SETUP.md): app on your phone AND in the browser, make check-files green',
-                o: 'D'
+                o: 'D',
+                done: true
             },
             {
                 id: 'pd-js',
@@ -85,7 +86,8 @@ const PHASES = [
                 id: 'pm-setup',
                 t: 'Machine setup on a call with Teo (docs/SETUP.md, ~2–3 h): app on your phone AND in the browser, make check-files green',
                 o: 'M',
-                k: 'together'
+                k: 'together',
+                done: true
             },
             {
                 id: 'pm-basics',

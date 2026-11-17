@@ -1,6 +1,6 @@
 # Recipe: From a branch to a merged PR
 
-> **Written by:** Teo (with the v4 roadmap) · **Worked example:** [PR #9 — remove dummy migrations](https://github.com/Attackeler/gamenight-teo-denis/pull/9) · **Replicated by:** —
+> **Written by:** Teo (with the v4 roadmap) · **Worked example:** [PR #9 — remove dummy migrations](https://github.com/Attackeler/gamenight-teo-dragos-marcian/pull/9) · **Replicated by:** —
 
 **Use this when:** you're about to change anything in the repo — code, docs, config. Every change goes through this flow; nobody commits to `main` directly (branch protection blocks it anyway).
 

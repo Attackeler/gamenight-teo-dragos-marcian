@@ -33,7 +33,7 @@ Where we are right now: [`STATUS.md`](./STATUS.md). Set up your machine first: [
 - [x] **0.T2 — Get these docs onto `main`** (done 2026-11-04, PR #10)
     - `git push -u origin docs/team-roadmap`, then open a PR into `main`. Dragos reviews it.
     - After the merge: delete `team-roadmap.bundle` from your machine, and delete the merged old branches on GitHub (list in `STATUS.md`)
-- [x] **0.T3 — Repo access** (done 2026-11-06: Dragos added; Marcian gets added when he joins)
+- [x] **0.T3 — Repo access** (done 2026-11-17: Dragos and Marcian added)
     - GitHub → Settings → Collaborators: add Dragos and Marcian
     - [x] Rule for `main`: require a PR, **1 approving review**, and the `check-run` CI check (already set up as a ruleset)
 - [x] **0.T4 — Fix the pre-commit hook** (done 2026-11-04, PR #20) · commit `fix(devops): run lint-staged in pre-commit`
@@ -43,7 +43,7 @@ Where we are right now: [`STATUS.md`](./STATUS.md). Set up your machine first: [
 
 ### Dragos
 
-- [ ] **0.D1 — Machine setup** with [`SETUP.md`](./SETUP.md), on a call with Teo
+- [x] **0.D1 — Machine setup** with [`SETUP.md`](./SETUP.md), on a call with Teo (done 2026-11-17)
     - Done when the app runs on your phone and in the browser, and `make check-files` passes
 - [ ] **0.D2 — 📖 Local-environment recipe** (with Marcian) · commit `docs(playbook): add local environment recipe`
     - Copy `playbook/_TEMPLATE.md` to `playbook/local-env.md`
@@ -58,7 +58,7 @@ Where we are right now: [`STATUS.md`](./STATUS.md). Set up your machine first: [
 
 ### Marcian
 
-- [ ] **0.M1 — Machine setup** with [`SETUP.md`](./SETUP.md), on a call with Teo
+- [x] **0.M1 — Machine setup** with [`SETUP.md`](./SETUP.md), on a call with Teo (done 2026-11-17)
     - Done when the app runs on your phone and in the browser, and `make check-files` passes
 - [ ] **0.M2 — 📖 Local-environment recipe** (with Dragos)
     - Add every setup problem you hit to Dragos's `playbook/local-env.md` PR, even small ones
