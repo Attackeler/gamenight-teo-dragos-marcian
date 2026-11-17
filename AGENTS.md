@@ -6,18 +6,22 @@ Gamenight is an Expo (React Native + web) app with a Supabase backend, built by 
 
 Every new or moved file must live in the folder whose job matches what the file does.
 
-| Path                   | What belongs here                                                                                        |
-| ---------------------- | -------------------------------------------------------------------------------------------------------- |
-| `app/`                 | Screens and layouts only. Expo Router turns every file here into a route, so nothing else goes here      |
-| `src/components/`      | Reusable UI components (`Button`, `Card`, `Input`, …), one component per file, file name in PascalCase   |
-| `src/theme/`           | Design tokens (`tokens.ts`) and the theme provider. Colors, spacing, radii and type sizes live only here |
-| `supabase/migrations/` | Versioned SQL that changes the database. Never edit a migration that is already on `main`; add a new one |
-| `supabase/`            | Supabase config (`config.toml`). Ad-hoc SQL snippets are not committed                                   |
-| `docs/`                | Spec, roadmap, status and task list, mockups                                                             |
-| `docs/playbook/`       | Recipes: how to do each kind of task, one Markdown file per kind                                         |
-| `docs/scripts/`        | Python import scripts for docs data                                                                      |
-| `.github/`             | CI workflows and issue/PR templates                                                                      |
-| `app-example/`         | Expo's demo code, kept for reference. Not part of the app: nothing may import from it                    |
+| Path                   | What belongs here                                                                                                                     |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| repo root (`/`)        | Project-wide config and instruction files: `README.md`, `AGENTS.md`, `CLAUDE.md`, `package.json`, tool configs, dotfiles. No app code |
+| `app/`                 | Screens and layouts only. Expo Router turns every file here into a route, so nothing else goes here                                   |
+| `src/components/`      | Reusable UI components (`Button`, `Card`, `Input`, …), one component per file, file name in PascalCase                                |
+| `src/theme/`           | Design tokens (`tokens.ts`) and the theme provider. Colors, spacing, radii and type sizes live only here                              |
+| `assets/`              | Images and other static files bundled with the app (icons, splash, favicon)                                                           |
+| `supabase/migrations/` | Versioned SQL that changes the database. Never edit a migration that is already on `main`; add a new one                              |
+| `supabase/`            | Supabase config (`config.toml`). Ad-hoc SQL snippets are not committed                                                                |
+| `docs/`                | Spec, roadmap, status and task list, mockups                                                                                          |
+| `docs/playbook/`       | Recipes: how to do each kind of task, one Markdown file per kind                                                                      |
+| `docs/scripts/`        | Python import scripts for docs data                                                                                                   |
+| `.github/`             | CI workflows and issue/PR templates                                                                                                   |
+| `.husky/`              | Git hooks (pre-commit, commit-msg)                                                                                                    |
+| `.vscode/`             | Shared editor settings and the team spell-check dictionary                                                                            |
+| `app-example/`         | Expo's demo code, kept for reference. Not part of the app: nothing may import from it                                                 |
 
 ## Review guidelines
 
