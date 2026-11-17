@@ -46,8 +46,8 @@ npm -v    # must print 11.17.0
 ## 3. Get the code
 
 ```bash
-git clone https://github.com/Attackeler/gamenight-teo-denis.git
-cd gamenight-teo-denis
+git clone https://github.com/Attackeler/gamenight-teo-dragos-marcian.git
+cd gamenight-teo-dragos-marcian
 npm install          # also installs the git hooks
 code .               # opens VS Code
 ```

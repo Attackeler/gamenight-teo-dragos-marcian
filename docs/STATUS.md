@@ -1,6 +1,6 @@
 # Where we are
 
-> **Last checked: 2026-11-17**, against GitHub (`Attackeler/gamenight-teo-denis`) and every branch. Update this page in the weekly sync — it should take two minutes.
+> **Last checked: 2026-11-17**, against GitHub (`Attackeler/gamenight-teo-dragos-marcian`) and every branch. Update this page in the weekly sync — it should take two minutes.
 
 ## In one sentence
 

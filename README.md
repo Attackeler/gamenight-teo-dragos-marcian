@@ -16,8 +16,8 @@ Then, as needed: [`docs/playbook/git-pr-flow.md`](./docs/playbook/git-pr-flow.md
 
 ```bash
 # Needs: Node 26.4.0 + npm 11.17.0 (enforced), Docker Desktop running, git
-git clone https://github.com/Attackeler/gamenight-teo-denis.git
-cd gamenight-teo-denis
+git clone https://github.com/Attackeler/gamenight-teo-dragos-marcian.git
+cd gamenight-teo-dragos-marcian
 npm install                  # also installs the git hooks
 npx supabase start           # local database (Docker)
 cp .env.example .env.local   # fill in the URL + key from: npx supabase status
