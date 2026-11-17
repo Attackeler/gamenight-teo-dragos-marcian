@@ -416,10 +416,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Claude / AI assistant local config
+# Claude / AI assistant local config (AGENTS.md and CLAUDE.md are shared, so they are committed)
 .claude/
-CLAUDE.md
-AGENTS.md
 
 # Expo 
 .expo/
