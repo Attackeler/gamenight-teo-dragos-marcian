@@ -17,7 +17,7 @@ export default function Index() {
                 backgroundColor: theme.colors.core.bg
             }}
         >
-            <Button>Toggle theme</Button>
+            <Button onPress={toggleTheme}>Toggle theme</Button>
             <Card></Card>
         </SafeAreaView>
     );

@@ -47,7 +47,11 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     useEffect(() => {
         const getMode = async () => {
             const savedMode = await AsyncStorage.getItem('themeMode');
-            setMode(savedMode as Mode);
+            if (savedMode == null) {
+                setMode('system');
+            } else {
+                setMode(savedMode as Mode);
+            }
         };
         getMode();
     }, []);
