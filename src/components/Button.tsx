@@ -11,8 +11,7 @@ export default function Button({ children, ...props }: any) {
         <>
             <Pressable
                 style={{
-                    backgroundColor: theme.colors.core.surfaceAlt,
-                    userSelect: 'none'
+                    backgroundColor: theme.colors.core.surfaceAlt
                 }}
                 {...props}
             >

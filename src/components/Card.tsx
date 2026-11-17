@@ -20,6 +20,7 @@ export default function Card({ children, ...props }: any) {
                 backgroundColor: theme.colors.core.surface,
                 borderRadius: radii.card,
                 padding: spacing.l,
+                height: '10%',
                 ...themeElevation
             }}
         >
