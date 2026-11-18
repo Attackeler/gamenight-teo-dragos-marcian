@@ -22,6 +22,12 @@ function AppContent({ fontsLoaded }: { fontsLoaded: boolean }) {
     useEffect(() => {
         if (themeLoaded && fontsLoaded) SplashScreen.hide();
     }, [fontsLoaded, themeLoaded]);
+
+    // On web there is no native splash screen to cover the first render,
+    // so render nothing until the saved theme has been read.
+    if (!themeLoaded) {
+        return null;
+    }
     return (
         <Stack>
             <Stack.Screen name="index" />
