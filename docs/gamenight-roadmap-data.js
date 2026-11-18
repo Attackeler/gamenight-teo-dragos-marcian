@@ -330,7 +330,8 @@ const PHASES = [
                 id: 'p2-fix',
                 t: 'Fix the theme provider: first launch (null) → system; toggle from the theme actually shown; System / Light / Dark all selectable; no startup flash',
                 o: 'T',
-                c: 'fix(theme): default to system mode and support three-way selection'
+                c: 'fix(theme): default to system mode and support three-way selection',
+                done: true
             },
             {
                 id: 'p2-components',

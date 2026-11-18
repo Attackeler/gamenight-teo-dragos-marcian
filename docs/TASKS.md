@@ -78,7 +78,7 @@ Where we are right now: [`STATUS.md`](./STATUS.md). Set up your machine first: [
 
 ### Teo
 
-- [ ] **1.T1 — Fix the theme provider** (do this first; everything builds on it) · commit `fix(theme): default to system mode and support three-way selection`
+- [x] **1.T1 — Fix the theme provider** (do this first; everything builds on it) (done 2026-11-18) · commit `fix(theme): default to system mode and support three-way selection`
     - An empty storage (`null`) on first launch must mean `'system'`
     - Replace the light ↔ dark `toggleTheme` with `setMode('system' | 'light_theme' | 'dark_theme')`
     - Expose the resolved scheme (`'light' | 'dark'`) instead of comparing theme objects
