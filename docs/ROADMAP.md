@@ -42,7 +42,7 @@ Not "everyone has seen everything". Everyone has _done_ every kind of work at le
 
 **Phase 0 and 1 are done** (PRs #1–#9, #11, #13, #15, #18–#20; small leftovers below). **Phase 2 is in progress** (tokens, theme and component drafts merged in PR #12), and **Phases 3+ haven't started**. `docs/scripts/` already holds the Phase 8 pre-work (`games_schema.sql` + the BGG import script). The full, dated picture (branches, known bugs) is in **[`STATUS.md`](./STATUS.md)**.
 
-**Versions pinned in the repo:** Expo SDK 58 (`^58.0.0`, updated weekly by a PR from the `Expo update` workflow), Expo Router 58, React Native 0.88.1, React 19.3, TypeScript 6.0, Node 26.4 (`engines` + `engine-strict`). Repo: `Attackeler/gamenight-teo-denis` on GitHub.
+**Versions pinned in the repo:** Expo SDK 58 (`^58.0.0`, updated weekly by a PR from the `Expo update` workflow), Expo Router 58, React Native 0.88.1, React 19.3, TypeScript 6.0, Node 26.4 (`engines` + `engine-strict`). Repo: `Attackeler/gamenight-teo-dragos-marcian` on GitHub.
 
 **Old → new phase numbers** (branch names like `chore/phase-0.7-devops` used the old ones): old 0 → **0** · old 0.7 → **1** · old 0.5 → **2** · old 1 → **3** · old 2 → **4** · old 3 → **5** · old 4 → **6** · old 5 → **7** · old 6 → **8** · old 10 → **9** · old 7 → **10** · old 8 → **11** · old 9 → **12** · old 11 → **13**. **Phase O** (on-ramps) replaces v3's Phase D.
 
