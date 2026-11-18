@@ -1,19 +1,12 @@
 import { useContext } from 'react';
 import { View } from 'react-native';
 import { ThemeContext } from '../theme/ThemeProvider';
-import {
-    typography,
-    dark_theme,
-    elevation,
-    radii,
-    spacing
-} from '../theme/tokens';
+import { typography, elevation, radii, spacing } from '../theme/tokens';
 import AppText from './AppText';
 
 export default function Card({ children, ...props }: any) {
-    const { theme } = useContext(ThemeContext);
-    const themeElevation =
-        theme === dark_theme ? elevation.dark : elevation.light;
+    const { theme, scheme } = useContext(ThemeContext);
+    const themeElevation = scheme === 'dark' ? elevation.dark : elevation.light;
     return (
         <View
             style={{

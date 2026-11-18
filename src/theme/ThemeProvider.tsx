@@ -10,13 +10,15 @@ export type ThemeContextType = {
     theme: Theme;
     selectTheme: (mode: Mode) => void;
     themeLoaded: boolean;
+    scheme: 'dark' | 'light';
 };
 
 const defaultThemeContext: ThemeContextType = {
     mode: 'dark_theme',
     theme: dark_theme,
     selectTheme: () => {},
-    themeLoaded: false
+    themeLoaded: false,
+    scheme: 'dark'
 };
 
 export const ThemeContext =
@@ -26,14 +28,16 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     const colorScheme = useColorScheme();
     const [themeLoaded, setThemeLoaded] = useState(false);
     const [mode, setMode] = useState<Mode>('system');
-    const resolved =
+    const scheme =
         mode === 'system'
             ? colorScheme === 'dark'
-                ? dark_theme
-                : light_theme
+                ? 'dark'
+                : 'light'
             : mode === 'dark_theme'
-              ? dark_theme
-              : light_theme;
+              ? 'dark'
+              : 'light';
+
+    const resolved = scheme === 'dark' ? dark_theme : light_theme;
 
     async function saveThemeMode(mode: Mode) {
         await AsyncStorage.setItem('themeMode', mode);
@@ -60,7 +64,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
     return (
         <ThemeContext.Provider
-            value={{ mode, theme: resolved, selectTheme, themeLoaded }}
+            value={{ mode, theme: resolved, selectTheme, themeLoaded, scheme }}
         >
             {children}
         </ThemeContext.Provider>
