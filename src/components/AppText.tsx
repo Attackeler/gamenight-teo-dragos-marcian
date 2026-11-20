@@ -9,6 +9,7 @@ export default function AppText({ font, ...props }: any) {
                 ...font,
                 color: theme.colors.core.text
             }}
+            selectable={false}
             {...props}
         ></Text>
     );
