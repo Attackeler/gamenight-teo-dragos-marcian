@@ -6,7 +6,7 @@ import { typography, Theme } from '../theme/tokens';
 type Variant = keyof typeof typography;
 type ThemeColorsCombined = Theme['colors']['core'] &
     Theme['colors']['accent_semantic'];
-type ThemeColor = keyof ThemeColorsCombined;
+export type ThemeColor = keyof ThemeColorsCombined;
 type AppTextProps = TextProps & {
     variant?: Variant;
     color?: ThemeColor;

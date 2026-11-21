@@ -16,13 +16,18 @@ export default function Index() {
                 backgroundColor: theme.colors.core.bg
             }}
         >
-            <Button onPress={() => selectTheme('light_theme')}>
-                light_theme
+            <Button
+                variant="primary"
+                onPress={() => selectTheme('light_theme')}
+            >
+                light
             </Button>
-            <Button onPress={() => selectTheme('dark_theme')}>
-                dark_theme
+            <Button variant="tinted" onPress={() => selectTheme('dark_theme')}>
+                dark
             </Button>
-            <Button onPress={() => selectTheme('system')}>system</Button>
+            <Button variant="plain" onPress={() => selectTheme('system')}>
+                system
+            </Button>
             <Card></Card>
         </SafeAreaView>
     );
