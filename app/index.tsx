@@ -1,3 +1,4 @@
+import AppText from '@/src/components/AppText';
 import Button from '@/src/components/Button';
 import Card from '@/src/components/Card';
 import { ThemeContext } from '@/src/theme/ThemeProvider';
