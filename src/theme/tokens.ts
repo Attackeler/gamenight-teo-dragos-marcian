@@ -100,4 +100,9 @@ export const icon = {
     strokeWidth: 2
 } as const;
 
+export const heights = {
+    button: 50,
+    input: 48
+} as const;
+
 export type Theme = typeof dark_theme | typeof light_theme;
