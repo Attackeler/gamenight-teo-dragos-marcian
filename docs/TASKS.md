@@ -84,10 +84,10 @@ Where we are right now: [`STATUS.md`](./STATUS.md). Set up your machine first: [
     - Expose the resolved scheme (`'light' | 'dark'`) instead of comparing theme objects
     - Keep the splash screen up until fonts and theme are loaded, so there's no wrong-theme flash
     - Check it: clear the app's data, open it, and it follows the OS theme
-- [ ] **1.T2 — Finish the base components** · commit `feat(ui): add themed base components`
+- [x] **1.T2 — Finish the base components** (done 2026-11-22) · commit `feat(ui): add themed base components`
     - `Screen` (safe area + background), `AppText` (type scale), `Button` (primary / tinted / plain), `Card`
     - Typed props, no `any`, tokens only (no raw hex values or numbers)
-- [ ] **1.T3 — 📖 Base-component recipe** · commit `docs(playbook): add base component recipe`
+- [x] **1.T3 — 📖 Base-component recipe** (done 2026-11-22) · commit `docs(playbook): add base component recipe`
     - `playbook/base-component.md`: token lookup → new file → typed props → add it to the gallery → check both themes
     - Link 1.T2 as the worked example
 
