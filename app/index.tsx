@@ -1,14 +1,13 @@
 import AppText from '@/src/components/AppText';
 import Button from '@/src/components/Button';
 import Card from '@/src/components/Card';
+import Screen from '@/src/components/Screen';
 import { ThemeContext } from '@/src/theme/ThemeProvider';
 import { useContext } from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
-
 export default function Index() {
     const { theme, selectTheme } = useContext(ThemeContext);
     return (
-        <SafeAreaView
+        <Screen
             style={{
                 flex: 1,
                 justifyContent: 'center',
@@ -32,6 +31,6 @@ export default function Index() {
                 <AppText>Friday boardgame night</AppText>
                 <AppText>Fri, Jul 3 * 19:00</AppText>
             </Card>
-        </SafeAreaView>
+        </Screen>
     );
 }
