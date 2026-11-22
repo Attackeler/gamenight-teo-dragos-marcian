@@ -5,14 +5,12 @@ import Screen from '@/src/components/Screen';
 import { ThemeContext } from '@/src/theme/ThemeProvider';
 import { useContext } from 'react';
 export default function Index() {
-    const { theme, selectTheme } = useContext(ThemeContext);
+    const { selectTheme } = useContext(ThemeContext);
     return (
         <Screen
             style={{
-                flex: 1,
                 justifyContent: 'center',
-                alignItems: 'center',
-                backgroundColor: theme.colors.core.bg
+                alignItems: 'center'
             }}
         >
             <Button
