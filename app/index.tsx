@@ -28,7 +28,10 @@ export default function Index() {
             <Button variant="plain" onPress={() => selectTheme('system')}>
                 system
             </Button>
-            <Card></Card>
+            <Card>
+                <AppText>Friday boardgame night</AppText>
+                <AppText>Fri, Jul 3 * 19:00</AppText>
+            </Card>
         </SafeAreaView>
     );
 }
