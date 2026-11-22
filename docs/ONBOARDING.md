@@ -73,7 +73,7 @@ The concepts transfer; mostly the spelling changes:
 - **Expo & routing:** [Expo tutorial](https://docs.expo.dev/tutorial/introduction/) (skim; our app already exists) · [Expo Router](https://docs.expo.dev/router/introduction/) — files in `app/` become screens.
 - **Read our actual code:** `app/_layout.tsx`, `app/index.tsx`, everything in `src/theme/` and `src/components/`.
 
-> **Checkpoint:** you know how a file in `app/` becomes a screen and what `_layout.tsx` does. **First real PR (Phase 2):** build `Input` from the **base-component recipe** Teo writes (`docs/playbook/base-component.md`) — `DESIGN.md` §5: `surfaceAlt` background, radius 12, height 48, `accent` focus ring, tokens only. Where the recipe wasn't enough, fix it in the same PR.
+> **Checkpoint:** you know how a file in `app/` becomes a screen and what `_layout.tsx` does. **First real PR (Phase 2):** build `Input` from the **[base-component recipe](./playbook/base-component.md)** — `DESIGN.md` §5: `surfaceAlt` background, radius 12, height 48, `accent` focus ring, tokens only. Where the recipe wasn't enough, fix it in the same PR.
 
 **Later (before your Phase 3 tasks):** [SQLBolt](https://sqlbolt.com/) lessons 1–12, then [Supabase: Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security). Budget ~4 h.
 
