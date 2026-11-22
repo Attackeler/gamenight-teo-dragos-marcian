@@ -111,9 +111,13 @@
 - **Centering:** `justifyContent: 'center'` + `alignItems: 'center'` go on the **container**. `textAlign` only aligns text inside its own box.
 - **`selectable={false}`**, not `selectable="false"`: a string is always "true".
 - **Don't center or lay out inside a base component** unless the spec says so (e.g. `Screen` only does safe area + background). Layout is the screen's job; it passes it through `style`.
+- **Don't build a new object on every render just to read one value from it.** `AppText` first merged both color groups (`{ ...core, ...accent_semantic }`) on every render to read one color; Codex flagged it. Read the value straight from the group it lives in instead. When a prop can be a key from either of two groups, a **type guard** tells TypeScript which group to read from (a plain `key in obj ? … : …` isn't enough for TypeScript). See `isCore` and `getColor` in [`AppText.tsx`](../../src/components/AppText.tsx) and [TypeScript: type predicates](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates).
+- **`keyof` goes on an object, never on a list of names.** `keyof Theme['colors']['core']` gives `'bg' | 'surface' | …`. Putting `keyof` on that list again gives the methods of a string (`'charAt' | 'slice' | …`). And join two lists of names with `|` (either one), not `&` (only names in both, which is none).
+- **Types don't exist when the app runs.** `in` checks a real object at runtime, so write `c in dark_theme.colors.core` (a value from `tokens.ts`), not `c in Theme['colors']['core']` (a type). Use the `theme` from `useContext` when you _read_ a color, so it follows the chosen theme.
 
 ## Changelog
 
 <!-- One line per fix: date — who — what was unclear and what changed. -->
 
 - 2026-11-22 — Teo — first version, from PR #26.
+- 2026-11-22 — Teo — added gotchas from the Codex review: no per-render objects, type guards, `keyof` and `|` vs `&`, types vs values.
