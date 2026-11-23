@@ -339,14 +339,16 @@ const PHASES = [
                 id: 'p2-components',
                 t: 'Base components Screen, AppText, Button (primary / tinted / plain), Card — generic, typed props, tokens only',
                 o: 'T',
-                c: 'feat(ui): add themed base components'
+                c: 'feat(ui): add themed base components',
+                done: true
             },
             {
                 id: 'p2-recipe',
                 t: 'Recipe: base component',
                 o: 'T',
                 k: 'recipe',
-                c: 'docs(playbook): add base component recipe'
+                c: 'docs(playbook): add base component recipe',
+                done: true
             },
             {
                 id: 'p2-input',
@@ -1344,7 +1346,12 @@ const SKILLS = [
         name: 'Run & fix the local dev environment',
         by: 'Dragos + Marcian · O'
     },
-    { id: 'base-component', name: 'Base component', by: 'Teo · 2' },
+    {
+        id: 'base-component',
+        name: 'Base component',
+        by: 'Teo · 2',
+        recipe: 'playbook/base-component.md'
+    },
     { id: 'new-screen', name: 'New screen / route', by: 'Dragos · 2' },
     { id: 'db-table', name: 'Table + migration + RLS', by: 'Teo · 3' },
     { id: 'db-types', name: 'Regenerate TypeScript types', by: 'Dragos · 3' },
