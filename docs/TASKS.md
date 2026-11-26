@@ -62,7 +62,7 @@ Where we are right now: [`STATUS.md`](./STATUS.md). Set up your machine first: [
     - Done when the app runs on your phone and in the browser, and `make check-files` passes
 - [ ] **0.M2 — 📖 Local-environment recipe** (with Dragos)
     - Add every setup problem you hit to Dragos's `playbook/local-env.md` PR, even small ones
-- [ ] **0.M3 — 🔁 Practice PR, following the git recipe** · commit `docs: add my favorite game to the team table`
+- [x] **0.M3 — 🔁 Practice PR, following the git recipe** · commit `docs: add my favorite game to the team table`
     - Fill in your favorite board game in the team table in `docs/README.md`
     - If any step of the git recipe confused you, fix the recipe in the same PR
 - [ ] **0.M4 — Fix two npm scripts** · commit `fix(devops): fix format script and remove reset-project`
