@@ -8,7 +8,7 @@ A free **mobile + web app** for friend groups to track board-game-night scores a
 | ------- | ------------ | ------------------------------------ | ------------------- |
 | Teo     | ~40 h/week   | Started the project, knows the stack | —                   |
 | Dragos  | ~15 h/week   | Coming from Python; new to JS/React  | —                   |
-| Marcian | ~5–10 h/week | Learning programming from zero       | —                   |
+| Marcian | ~5–10 h/week | Learning programming from zero       | HEAT                |
 
 **Work is split equally:** the same number of tasks per person in every step. Teo's extra hours go to reviews and pairing. See [`TASKS.md`](./TASKS.md).
 
