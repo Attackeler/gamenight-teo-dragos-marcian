@@ -65,7 +65,7 @@ Where we are right now: [`STATUS.md`](./STATUS.md). Set up your machine first: [
 - [x] **0.M3 — 🔁 Practice PR, following the git recipe** · commit `docs: add my favorite game to the team table`
     - Fill in your favorite board game in the team table in `docs/README.md`
     - If any step of the git recipe confused you, fix the recipe in the same PR
-- [ ] **0.M4 — Fix two npm scripts** · commit `fix(devops): fix format script and remove reset-project`
+- [x] **0.M4 — Fix two npm scripts** · commit `fix(devops): fix format script and remove reset-project`
     - In `package.json` → `"scripts"`: change `"format": "prettier:fix"` to `"format": "npm run prettier:fix"`
     - Delete the `"reset-project"` line (the file it runs no longer exists)
     - Check it: `npm run format` runs Prettier without an error
