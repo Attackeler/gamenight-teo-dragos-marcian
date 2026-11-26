@@ -4,7 +4,6 @@
     "version": "1.0.0",
     "scripts": {
         "start": "expo start",
-        "reset-project": "node ./scripts/reset-project.js",
         "android": "expo start --android",
         "ios": "expo start --ios",
         "web": "expo start --web",
@@ -15,7 +14,7 @@
         "pre-commit": "lint-staged",
         "postinstall": "husky",
         "ts-check": "tsc --noEmit true --project ./tsconfig.json",
-        "format": "prettier:fix",
+        "format": "npm run prettier:fix",
         "prepare": "husky"
     },
     "dependencies": {
