@@ -1,4 +1,5 @@
 import AppText from '@/src/components/AppText';
+import Avatar from '@/src/components/Avatar';
 import Button from '@/src/components/Button';
 import Card from '@/src/components/Card';
 import Screen from '@/src/components/Screen';
@@ -13,6 +14,9 @@ export default function Index() {
                 alignItems: 'center'
             }}
         >
+            <Avatar variant="large" username="auasdasd">
+                test
+            </Avatar>
             <Button
                 variant="primary"
                 onPress={() => selectTheme('light_theme')}

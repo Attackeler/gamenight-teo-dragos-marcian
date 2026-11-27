@@ -105,4 +105,12 @@ export const heights = {
     input: 48
 } as const;
 
+export const sizes = {
+    avatar: {
+        small: 32,
+        medium: 40,
+        large: 64
+    }
+} as const;
+
 export type Theme = typeof dark_theme | typeof light_theme;
